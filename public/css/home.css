@@ -168,8 +168,16 @@ a {
 
 .hero {
     background:
-        radial-gradient(circle at 83% 22%, rgba(62, 174, 80, 0.17), transparent 15%),
-        radial-gradient(circle at 65% 44%, rgba(255, 185, 91, 0.24), transparent 28%),
+        radial-gradient(
+            circle at 83% 22%,
+            rgba(62, 174, 80, 0.17),
+            transparent 15%
+        ),
+        radial-gradient(
+            circle at 65% 44%,
+            rgba(255, 185, 91, 0.24),
+            transparent 28%
+        ),
         linear-gradient(105deg, #fff9f0 0%, #fff4df 47%, #fffaf2 100%);
 }
 
@@ -246,13 +254,13 @@ h1 span {
 
 .cup-image {
     display: block;
-    width: 100%;
+    width: 700px;
     height: auto;
     object-fit: contain;
 }
 
 .hero-cup {
-    max-width: 560px;
+    max-width: 1000px;
     filter: drop-shadow(0 28px 35px rgba(66, 34, 15, 0.22));
 }
 
@@ -414,7 +422,11 @@ details {
     padding: 28px;
     border-radius: 8px;
     background:
-        radial-gradient(circle at 78% 62%, rgba(255, 255, 255, 0.75), transparent 28%),
+        radial-gradient(
+            circle at 78% 62%,
+            rgba(255, 255, 255, 0.75),
+            transparent 28%
+        ),
         linear-gradient(120deg, #f7dfbd, #fff4df);
 }
 
@@ -480,7 +492,13 @@ details p {
 }
 
 .footer {
-    background: radial-gradient(circle at 12% 20%, rgba(138, 66, 24, 0.42), transparent 26%), #351807;
+    background:
+        radial-gradient(
+            circle at 12% 20%,
+            rgba(138, 66, 24, 0.42),
+            transparent 26%
+        ),
+        #351807;
     color: #fff8ef;
     padding: 38px 0 24px;
 }

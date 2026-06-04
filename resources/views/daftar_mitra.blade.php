@@ -21,7 +21,6 @@
                 <a href="#beranda">Beranda</a>
                 <a href="#produk">Produk Kami</a>
                 <a href="#kemitraan">Langkah Mitra</a>
-                <a href="#faq">FAQ</a>
             </nav>
 
             <div class="nav-actions">
@@ -147,13 +146,11 @@
                 <p>WhatsApp: 0812-3456-7890<br>Instagram: @tehtarikhanaang<br>Email: info@tehtarikhanaang.com</p>
             </div>
             <div class="chat-box">
-                <a class="whatsapp-float" href="https://wa.me/6281212182958" aria-label="Chat WhatsApp">
-                    <img src="{{ asset('images/logowa.png') }}" alt="WhatsApp">
-                </a>
+                <a class="whatsapp-float" href="https://wa.me/6281212182958" aria-label="Chat WhatsApp">WA</a>
                 <span>Chat dengan kami<br>via WhatsApp</span>
             </div>
         </div>
-        <div class="copyright">&copy; 2026 Teh Tarik Hanaang. All Rights Reserved.</div>
+        <div class="copyright">&copy; 2024 Teh Tarik Hanaang. All Rights Reserved.</div>
     </footer>
 </body>
 </html>

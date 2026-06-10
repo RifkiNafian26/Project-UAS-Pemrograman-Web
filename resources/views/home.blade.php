@@ -99,27 +99,39 @@
         <section class="page-section faq-section" id="faq">
             <div class="container">
                 <div class="section-heading fade-in-element">
-                    <p class="eyebrow">Pertanyaan yang Sering Ditanyakan</p>
-                    <h2>FAQ</h2>
+                    <p class="eyebrow">Pertanyaan Mitra</p>
+                    <h2>Hal yang Sering Ditanyakan</h2>
                 </div>
 
-                <div class="faq-grid">
-                    <details class="fade-in-element">
-                        <summary>Bagaimana cara menjadi mitra Teh Tarik Hanaang?</summary>
-                        <p>Isi form pendaftaran, lalu admin kami akan menghubungi Anda untuk proses berikutnya.</p>
-                    </details>
-                    <details class="fade-in-element">
-                        <summary>Apakah sistemnya bisa titip jual?</summary>
-                        <p>Bisa. Kami menyediakan beberapa pilihan kerja sama sesuai kebutuhan usaha Anda.</p>
-                    </details>
-                    <details class="fade-in-element">
-                        <summary>Apakah harus membeli stok dalam jumlah besar?</summary>
-                        <p>Jumlah stok bisa dibicarakan dengan admin agar sesuai kapasitas penjualan awal.</p>
-                    </details>
-                    <details class="fade-in-element">
-                        <summary>Wilayah mana saja yang bisa bergabung?</summary>
-                        <p>Kemitraan terbuka untuk berbagai wilayah dan akan disesuaikan dengan jalur distribusi.</p>
-                    </details>
+                <div class="faq-layout fade-in-element">
+                    <div class="faq-intro">
+                        <span>Butuh kepastian sebelum daftar?</span>
+                        <p>Berikut jawaban singkat untuk pertanyaan yang paling sering muncul dari calon mitra. Kalau masih ada yang ingin ditanyakan, tim Hanaang siap bantu lewat WhatsApp.</p>
+                        <a class="btn btn-light" href="https://wa.me/6281212182958">Tanya Admin</a>
+                    </div>
+
+                    <div class="faq-list">
+                        <details open>
+                            <summary>Bagaimana cara menjadi mitra Teh Tarik Hanaang?</summary>
+                            <p>Isi formulir pendaftaran di halaman daftar mitra. Setelah data masuk, admin akan menghubungi Anda melalui WhatsApp untuk menjelaskan proses berikutnya.</p>
+                        </details>
+                        <details>
+                            <summary>Apakah harus sudah punya lokasi jualan?</summary>
+                            <p>Tidak harus. Jika sudah punya lokasi, informasikan kota atau kabupatennya. Jika belum, admin tetap bisa berdiskusi dulu mengenai pilihan kerja sama yang cocok.</p>
+                        </details>
+                        <details>
+                            <summary>Apakah stok awal harus langsung banyak?</summary>
+                            <p>Jumlah stok awal bisa disesuaikan dengan kebutuhan dan kapasitas penjualan. Admin akan membantu memberi arahan agar pembelian awal tetap realistis.</p>
+                        </details>
+                        <details>
+                            <summary>Wilayah mana saja yang bisa mendaftar?</summary>
+                            <p>Pendaftaran terbuka untuk Pulau Jawa maupun luar Pulau Jawa. Ketersediaan pengiriman dan kerja sama akan dikonfirmasi lagi oleh admin.</p>
+                        </details>
+                        <details>
+                            <summary>Kapan saya akan dihubungi setelah daftar?</summary>
+                            <p>Admin akan meninjau data yang masuk terlebih dahulu, lalu menghubungi calon mitra melalui nomor WhatsApp yang dicantumkan pada formulir.</p>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>

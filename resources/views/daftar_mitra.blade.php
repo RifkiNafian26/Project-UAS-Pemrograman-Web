@@ -21,7 +21,7 @@
             </a>
 
             <nav class="nav-links" aria-label="Navigasi utama">
-                <a href="{{ url('/') }}">Beranda</a>
+                <a href="{{ url('/') }}">Kembali ke Beranda</a>
             </nav>
 
             <div class="nav-actions">
@@ -39,7 +39,8 @@
                 <div class="section-heading">
                     <h2>Daftar Kemitraan Teh Hanaang</h2>
                 </div>
-                <form class="partner-form" id="partnerForm" novalidate>
+                <form class="partner-form" id="partnerForm" method="POST" action="{{ route('daftar-mitra.store') }}" novalidate>
+                    @csrf
                     <div class="form-step firstgroup" data-step="first">
                         <div class="step-header">
                             <span>1</span>
@@ -52,12 +53,12 @@
                         <div class="form-grid">
                             <div class="form-group">
                                 <label for="nama">Nama Lengkap (Sesuai KTP)<span class="required">*</span></label>
-                                <input type="text" id="nama" name="nama" class="input-underline" placeholder="Masukkan nama Anda" required>
+                                <input type="text" id="nama" name="nama_lengkap" class="input-underline" placeholder="Masukkan nama Anda" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="whatsapp">Nomor HP (WhatsApp)<span class="required">*</span></label>
-                                <input type="tel" id="whatsapp" name="whatsapp" class="input-underline" placeholder="Contoh: 08xxxxxxxx" required>
+                                <input type="tel" id="whatsapp" name="nomor_whatsapp" class="input-underline" placeholder="Contoh: 08xxxxxxxx" required>
                             </div>
 
                             <div class="form-group">
@@ -79,7 +80,7 @@
                             <div class="form-group">
                                 <label for="lokasi">Lokasi Usaha Anda<span class="required">*</span></label>
                                 <div class="sub-label">Isi dengan nama Kota / Kabupaten:</div>
-                                <input type="text" id="lokasi" name="lokasi" class="input-underline" placeholder="Masukkan lokasi usaha Anda" required>
+                                <input type="text" id="lokasi" name="kota" class="input-underline" placeholder="Masukkan lokasi usaha Anda" required>
                             </div>
 
                             <div class="form-group">
@@ -196,7 +197,7 @@
                         </div>
                     </div>
 
-                    <div class="form-success is-hidden" id="formSuccess" role="status">
+                    <div class="form-success {{ session('success') ? '' : 'is-hidden' }}" id="formSuccess" role="status">
                         Form terkirim dengan sukses! Terima kasih telah mendaftar sebagai mitra Teh Hanaang. Tim kami akan segera menghubungi Anda.
                     </div>
                 </form>

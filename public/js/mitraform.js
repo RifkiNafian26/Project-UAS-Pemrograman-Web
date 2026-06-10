@@ -7,7 +7,6 @@ if (partnerForm) {
     const sourceCheckboxes = partnerForm.querySelectorAll('input[name="source[]"]');
     const agreement = document.getElementById('agreement');
     const submitButton = document.getElementById('submitButton');
-    const formSuccess = document.getElementById('formSuccess');
     const summaries = {
         nama: document.getElementById('summaryNama'),
         whatsapp: document.getElementById('summaryWhatsapp'),
@@ -93,25 +92,24 @@ if (partnerForm) {
     partnerForm.addEventListener('change', updateFormProgress);
 
     partnerForm.addEventListener('submit', (event) => {
-        event.preventDefault();
         updateSummary();
 
         if (!isFirstStepComplete()) {
+            event.preventDefault();
             scrollToStep(firstStep);
             return;
         }
 
         if (!isSecondStepComplete()) {
+            event.preventDefault();
             revealStep(secondStep);
             return;
         }
 
         if (!agreement.checked) {
+            event.preventDefault();
             revealStep(confirmationStep);
             return;
         }
-
-        formSuccess.classList.remove('is-hidden');
-        setTimeout(() => scrollToStep(formSuccess), 120);
     });
 }

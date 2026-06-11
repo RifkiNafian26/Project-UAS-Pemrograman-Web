@@ -1,8 +1,8 @@
 <x-admin-guest-layout>
     <div class="admin-login-heading">
         <p>Selamat datang kembali</p>
-        <h1>Masuk ke dashboard</h1>
-        <span>Kelola pendaftar mitra dan data operasional Hanaang.</span>
+        <h1>Masuk Admin</h1>
+        <span>Gunakan akun admin untuk membuka dashboard pendaftar mitra.</span>
     </div>
 
     @if (session('status'))
@@ -30,7 +30,10 @@
         </label>
 
         <button type="submit" class="admin-btn admin-btn-primary admin-login-submit">
+            <i data-lucide="log-out"></i>
             Masuk ke Dashboard
         </button>
     </form>
+
+    <p class="admin-login-footer">Area khusus pengelola Teh Tarik Hanaang.</p>
 </x-admin-guest-layout>

@@ -16,15 +16,28 @@
     </head>
     <body class="admin-login-body antialiased">
         <div class="admin-login-shell">
-            <a href="{{ route('login') }}" class="admin-login-brand">
-                <img src="{{ asset('images/logohanaanghitam.png') }}" alt="Teh Tarik Hanaang">
-                <span>PartnerHub Admin</span>
-            </a>
+            <section class="admin-login-hero" aria-label="Hanaang Admin">
+                <a href="{{ route('login') }}" class="admin-login-brand">
+                    <img src="{{ asset('images/logohanaanghitam.png') }}" alt="Teh Tarik Hanaang">
+                    <span>PartnerHub Admin</span>
+                </a>
+
+                <div class="admin-login-hero-copy">
+                    <p>Area Admin</p>
+                    <h1>Kelola pendaftar mitra dengan lebih rapi.</h1>
+                    <span>Data formulir, status tindak lanjut, dan arsip pendaftar berada dalam satu dashboard.</span>
+                </div>
+
+                <div class="admin-login-points">
+                    <span><i data-lucide="users"></i>Data calon mitra</span>
+                    <span><i data-lucide="save"></i>Status proses</span>
+                    <span><i data-lucide="log-out"></i>Akses aman</span>
+                </div>
+            </section>
 
             <div class="admin-login-panel">
                 {{ $slot }}
             </div>
-            <p class="admin-login-footer">Area khusus pengelola Teh Tarik Hanaang.</p>
         </div>
     </body>
 </html>
